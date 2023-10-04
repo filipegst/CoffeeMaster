@@ -1,16 +1,13 @@
-package com.example.coffeemaster
+package com.example.coffeemaster.Topicos
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
 import com.example.coffeemaster.databinding.ActivityTextoCompletoBinding
 
-class TextoCompleto : AppCompatActivity(R.layout.activity_texto_completo) {
+class TextoCompleto : AppCompatActivity() {
 
     private val binding by lazy {
-    ActivityTextoCompletoBinding.inflate(layoutInflater)
+        ActivityTextoCompletoBinding.inflate(layoutInflater)
     }
 
 

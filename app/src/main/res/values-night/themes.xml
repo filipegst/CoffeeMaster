@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CoffeeMaster" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.CoffeeMaster" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/corPrimaria</item>
+        <item name="colorPrimaryVariant">@color/corPrimariaEscura</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/corSecundaria</item>
+        <item name="colorPrimaryVariant">@color/corSecundariaEscura</item>
+        <item name="colorOnPrimary">@color/colorOnSecondary</item>
     </style>
 </resources>

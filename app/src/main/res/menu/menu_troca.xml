@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_conhecimentos"
+        android:icon="@drawable/ic_conhecimento_branco"
+        android:title="Conhecimentos do Cafe"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_passaporte"
+        android:icon="@drawable/ic_coffee_branco"
+        android:title="Passaporte"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_calculadora"
+        android:icon="@drawable/ic_calculadora_branca"
+        android:title="Calculadora"
+        app:showAsAction="ifRoom">
+
+    </item>
+</menu>

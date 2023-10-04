@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CoffeeMaster" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.CoffeeMaster" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/corPrimaria</item>
+        <item name="colorPrimaryVariant">@color/corPrimariaEscura</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/corSecundaria</item>
+        <item name="colorPrimaryVariant">@color/corSecundariaEscura</item>
+        <item name="colorOnPrimary">@color/colorOnSecondary</item>
+
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
     </style>
 
-    <style name="Theme.CoffeeMaster" parent="Base.Theme.CoffeeMaster" />
+
+    <style name="Base.Theme.CoffeeMaster.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/corPrimaria</item>
+        <item name="colorPrimaryVariant">@color/corPrimariaEscura</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/corSecundaria</item>
+        <item name="colorPrimaryVariant">@color/corSecundariaEscura</item>
+        <item name="colorOnPrimary">@color/colorOnSecondary</item>
+
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+    </style>
+
 </resources>

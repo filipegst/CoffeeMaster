@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="corPrimaria">#036635</color>
+    <color name="corPrimariaEscura">#0a4a2a</color>
+    <color name="colorOnPrimary">#ffffff</color>
+
+
+    <color name="corSecundaria">#155535</color>
+    <color name="corSecundariaEscura">#006400</color>
+    <color name="colorOnSecondary">#ffffff</color>
+
 </resources>

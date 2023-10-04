@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TextoCompleto">
+    tools:context=".Topicos.TextoCompleto">
 
     <ImageView
         android:id="@+id/TextoCompletoImagem"
@@ -16,13 +16,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/TextoCompletotitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:backgroundTint="@color/cardview_light_background"
-        android:clickable="false"
         android:paddingStart="18dp"
         android:paddingTop="8dp"
         android:paddingEnd="18dp"
@@ -35,7 +34,8 @@
         app:layout_constraintBottom_toBottomOf="@id/TextoCompletoImagem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TextoCompletoImagem" />
+        app:layout_constraintTop_toBottomOf="@id/TextoCompletoImagem"
+        android:clickable="false"   />
 
     <TextView
         android:id="@+id/TextoCompletoTexto"
@@ -43,11 +43,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="texto"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TextoCompletotitulo" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextoCompletotitulo"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

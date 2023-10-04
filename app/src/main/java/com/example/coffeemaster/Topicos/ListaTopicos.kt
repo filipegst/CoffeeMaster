@@ -1,12 +1,19 @@
-package com.example.coffeemaster
+package com.example.coffeemaster.Topicos
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.coffeemaster.Passaporte.ListaCafes
+import com.example.coffeemaster.Passaporte.PassaporteDoCafe
+import com.example.coffeemaster.R
 import com.example.coffeemaster.databinding.ActivityMainBinding
+import com.google.android.material.tabs.TabLayout
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class ListaTopicos : AppCompatActivity() {
 
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -23,7 +30,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         listaTopicos = ArrayList()
         recyclerView = binding.rvTopicos
-        ViewTopicosAdapter = TopicosAdapter(this@MainActivity, listaTopicos)
+        ViewTopicosAdapter = TopicosAdapter(this@ListaTopicos, listaTopicos)
 
 
         val layoutManager: RecyclerView.LayoutManager = GridLayoutManager(this, 2)
@@ -34,8 +41,29 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
 
 
+
         prepararListaTopicos()
 
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_troca,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.menu_passaporte -> Intent (this,ListaCafes::class.java).apply {
+            startActivity(this)
+            }
+            R.id.menu_conhecimentos -> Intent (this,listaTopicos::class.java).apply {
+                finish();
+                startActivity(getIntent());
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
 
     }
 
@@ -48,6 +76,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         listaTopicos.add(topico3)
         val topico4 = Topicos("teste4", R.drawable.imagem_padrao, "teste do quarto texto ")
         listaTopicos.add(topico4)
+        val topico5 = Topicos("historia do cafe", R.drawable.imagem_padrao, getString(R.string.historia_do_cafe))
+        listaTopicos.add(topico5)
 
     }
 }

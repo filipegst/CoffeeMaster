@@ -12,20 +12,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CoffeeMaster"
+        android:theme="@style/Base.Theme.CoffeeMaster"
         tools:targetApi="31">
         <activity
-            android:name=".TextoCompleto"
-            android:exported="false" />
+            android:name=".Passaporte.PassaporteDoCafe"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Passaporte.ListaCafes"
+            android:exported="true"/>
+        <activity
+            android:name=".TelaInicial"
+            android:theme="@style/Base.Theme.CoffeeMaster.NoActionBar"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Topicos.TextoCompleto"
+            android:exported="false" />
+        <activity
+            android:name=".Topicos.ListaTopicos"
+            android:exported="true" />
+
 
         <meta-data
             android:name="preloaded_fonts"
