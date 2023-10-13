@@ -19,7 +19,7 @@
         android:id="@+id/passaporteOrigem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Origem"
+        android:text="origem"
         android:textSize="20sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -31,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome"
+        android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="@+id/passaporteOrigem"
         app:layout_constraintTop_toBottomOf="@+id/passaporteOrigem"
@@ -42,45 +43,48 @@
         android:layout_height="wrap_content"
         android:text="Notas e caracteristicas do cafe"
         android:textSize="18sp"
+        android:textColor="@color/black"
         android:layout_marginTop="26dp"
         app:layout_constraintStart_toStartOf="@+id/passaporteNome"
         app:layout_constraintTop_toBottomOf="@+id/passaporteNome"
         app:layout_constraintEnd_toStartOf="@+id/passaporteImagem"
         />
 
-    <TextView
-        android:id="@+id/passaporteHistoria"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Historia do cafe, texto maior que tera em torno de no  minimo nove linhas que ira compor grande parte do espaço da tela "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passaporteNotas" />
+        <TextView
+            android:id="@+id/passaporteHistoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="Historia do cafe, texto maior que tera em torno de no  minimo nove linhas que ira compor grande parte do espaço da tela "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passaporteAcidez" />
 
-    <ImageView
-        android:id="@+id/passaporteImagem"
-        android:layout_width="0dp"
-        android:layout_height="160dp"
-        android:src="@drawable/imagem_padrao"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/passaporteNotas"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/passaporteImagem"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pike_embalagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/passaporteNotas"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/passaporteTorra"
-        android:layout_width="0dp"
-        android:layout_height="90dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/imagem_padrao"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passaporteHistoria" />
+        <ImageView
+            android:id="@+id/passaporteTorra"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/torra_pike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passaporteNotas" />
 
     <TextView
         android:id="@+id/passaporteCorpo"
@@ -88,19 +92,22 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Corpo: Medio"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passaporteTorra" />
 
-    <TextView
-        android:id="@+id/passaporteAcidez"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Acidez: Media"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passaporteCorpo" />
+        <TextView
+            android:id="@+id/passaporteAcidez"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Acidez: Media"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passaporteCorpo" />
 
     <TextView
         android:id="@+id/passaporteProcessamento"
@@ -108,6 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Processamento: Lavado"
+        android:textColor="@color/black"
         android:textAlignment="viewStart"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,6 +127,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textColor="@color/black"
         android:text="Regiao: Africa/Arabica "
         android:textAlignment="viewStart"
         android:textSize="18sp"
@@ -127,40 +136,41 @@
         app:layout_constraintTop_toTopOf="@+id/passaporteCorpo" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passaporteAnotaçoesLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:hint="anotaçoes da degustação"
-        app:layout_constraintBottom_toTopOf="@id/botaoSalvar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passaporteProcessamento">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/passaporteAnotaçoesLayout"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="anotaçoes da degustação"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/botaoSalvar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/passaporteProcessamento">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passaporteAnotaçoesTexto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical"
-            android:gravity="top|start"
-            android:inputType="textMultiLine"
-            android:textAlignment="viewStart" />
-    </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/passaporteAnotaçoesTexto"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:gravity="top|start"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:textAlignment="viewStart" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
-    <Button
-        android:id="@+id/botaoSalvar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:backgroundTint="@color/corPrimaria"
-        android:text="SALVAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passaporteAnotaçoesLayout"
-        app:layout_constraintVertical_bias="1" />
+<!--    <Button-->
+<!--        android:id="@+id/botaoSalvar"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:backgroundTint="@color/corPrimaria"-->
+<!--        android:text="SALVAR"-->
+<!--        android:clickable="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/passaporteAnotaçoesLayout"-->
+<!--        app:layout_constraintVertical_bias="1" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

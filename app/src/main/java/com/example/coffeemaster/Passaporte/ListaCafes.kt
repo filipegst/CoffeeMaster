@@ -28,29 +28,28 @@ class ListaCafes : AppCompatActivity() {
 
         listaCafes = ArrayList()
         recyclerView = binding.recyclerCafes
-        ViewCafesAdapter = CafeAdapter(this@ListaCafes, listaCafes)
+        ViewCafesAdapter = CafeAdapter(this@ListaCafes,listaCafes)
+
         recyclerView!!.layoutManager = LinearLayoutManager(this)
         recyclerView!!.setHasFixedSize(true)
         recyclerView!!.adapter = ViewCafesAdapter
-
-
         preparaListaCafes()
-
 
 
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_troca,menu)
+        menuInflater.inflate(R.menu.menu_troca, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId){
-            R.id.menu_conhecimentos -> Intent (this,ListaTopicos::class.java).apply {
+        when (item.itemId) {
+            R.id.menu_conhecimentos -> Intent(this, ListaTopicos::class.java).apply {
                 startActivity(this)
             }
-            R.id.menu_passaporte -> Intent (this,ListaCafes::class.java).apply {
+
+            R.id.menu_passaporte -> Intent(this, ListaCafes::class.java).apply {
                 finish();
                 startActivity(getIntent());
             }
@@ -61,11 +60,44 @@ class ListaCafes : AppCompatActivity() {
     }
 
 
-
-    private fun preparaListaCafes (){
-        val sumatra = Cafes("Sumatra","Origem Unica","Notas herbais e de Especiarias",R.drawable.imagem_padrao,R.drawable.imagem_padrao,"blablablablalba","Corpo:Encorpado","Processamento:Semi-Lavado","Acidez:Baixa")
+    private fun preparaListaCafes() {
+        val sumatra = Cafes(
+            "Sumatra",
+            "Origem Unica",
+            "Terosso com notas herbais e de Especiarias",
+            R.drawable.sumatra_embalagem,
+            R.drawable.sumatra_e_verona,
+            getString(
+                R.string.sumatra_historia
+            ),
+            "Corpo:Encorpado",
+            "Processamento:Semi-Lavado",
+            "Acidez:Baixa","Regiao:Asia/Pacifico"
+        )
         listaCafes.add(sumatra)
-        val sumatra2 = Cafes("Sumatra","Origem Unica","Notas herbais e de Especiarias",R.drawable.imagem_padrao,R.drawable.imagem_padrao,"blablablablalba","Corpo:Encorpado","Processamento:Semi-Lavado","Acidez:Baixa")
+        val sumatra2 = Cafes(
+            "Sumatra",
+            "Origem Unica",
+            "Notas herbais e de Especiarias",
+            R.drawable.imagem_padrao,
+            R.drawable.imagem_padrao,
+            "blablablablalba",
+            "Corpo:Encorpado",
+            "Processamento:Semi-Lavado",
+            "Acidez:Baixa", "Asia/Pacifico"
+        )
         listaCafes.add(sumatra2)
+        val brasil = Cafes(
+            "Brasil Blend",
+            "Blend",
+            "Notas de castanhas, nozes e chocolate ao leite",
+            R.drawable.brasil_embalagem,
+            R.drawable.torra_brasil_ethiopia,
+            "blablablablalba",
+            "Corpo:medio",
+            "Processamento:Lavado e semi-lavado",
+            "Acidez:Media/Baixa", "Regiao:America Latina"
+        )
+        listaCafes.add(brasil)
     }
 }

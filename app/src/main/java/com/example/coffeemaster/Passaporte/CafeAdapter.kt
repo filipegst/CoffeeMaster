@@ -44,6 +44,13 @@ class CafeAdapter(private val getActivity: ListaCafes, private val listaCafes: L
             intent.putExtra("imagem", itemAtual.imagem)
             intent.putExtra("nome", itemAtual.nome)
             intent.putExtra("notas", itemAtual.notas)
+            intent.putExtra("torra",itemAtual.torra)
+            intent.putExtra("origem",itemAtual.origem)
+            intent.putExtra("historia",itemAtual.historia)
+            intent.putExtra("acidez",itemAtual.acidez)
+            intent.putExtra("processamento",itemAtual.processamento)
+            intent.putExtra("corpo",itemAtual.corpo)
+            intent.putExtra("regiao",itemAtual.regiao)
 
             it.context.startActivity(intent)
         }

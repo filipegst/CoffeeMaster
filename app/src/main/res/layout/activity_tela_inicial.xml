@@ -16,7 +16,7 @@
         android:layout_height="250dp"
         android:scaleType="centerCrop"
         android:layout_margin="16dp"
-        android:src="@drawable/imagem_padrao"
+        android:src="@drawable/starlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
         android:layout_marginTop="140dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
-        android:backgroundTint="@color/corPrimaria"
+        android:backgroundTint="#583211"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagemTelaInicial"
@@ -62,7 +62,7 @@
                 android:layout_height="90dp"
                 android:layout_margin="6dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/imagem_padrao"
+                android:src="@drawable/conhecimento"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -81,7 +81,7 @@
         android:layout_marginTop="140dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
-        android:backgroundTint="#583211"
+        android:backgroundTint="@color/corPrimaria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardInicioTopicos"
@@ -113,7 +113,7 @@
                 android:layout_height="90dp"
                 android:layout_margin="6dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/imagem_padrao"
+                android:src="@drawable/passaporte"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -161,7 +161,7 @@
                 android:layout_height="90dp"
                 android:layout_margin="6dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/imagem_padrao"
+                android:src="@drawable/calculadora"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
