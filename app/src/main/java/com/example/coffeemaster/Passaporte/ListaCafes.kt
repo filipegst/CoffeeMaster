@@ -90,12 +90,12 @@ class ListaCafes : AppCompatActivity() {
         val brasil = Cafes(
             "Brasil Blend",
             "Blend",
-            "Notas de castanhas, nozes e chocolate ao leite",
+            "Suave acidez com notas de castanhas e chocolate ao leite",
             R.drawable.brasil_embalagem,
             R.drawable.torra_brasil_ethiopia,
-            "blablablablalba",
+            getString(R.string.brasil_historia),
             "Corpo:medio",
-            "Processamento:Lavado e semi-lavado",
+            "Processamento:seco e semi-lavado",
             "Acidez:Media/Baixa", "Regiao:America Latina"
         )
         listaCafes.add(brasil)
