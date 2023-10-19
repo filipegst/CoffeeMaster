@@ -61,6 +61,72 @@ class ListaCafes : AppCompatActivity() {
 
 
     private fun preparaListaCafes() {
+        val brasil = Cafes(
+            "Brasil Blend",
+            "Blend",
+            "Suave acidez com notas de castanhas e chocolate ao leite",
+            R.drawable.brasil_embalagem,
+            R.drawable.torra_brasil_ethiopia,
+            getString(R.string.brasil_historia),
+            "Corpo:Medio",
+            "Processamento:Seco\n                Semi-Lavado",
+            "Acidez:Media/Baixa", "Regiao:América Latina"
+        )
+        listaCafes.add(brasil)
+
+        val colombia = Cafes(
+            "Colombia",
+            "Origem Unica",
+            "Notas de cacau e Nozes",
+            R.drawable.colombia_embalagem,
+            R.drawable.torra_pike,
+            getString(R.string.colombia_historia),
+            "Corpo:Medio",
+            "Processamento:Lavado",
+            "Acidez:Media", "Regiao:América Latina"
+        )
+        listaCafes.add(colombia)
+
+
+        val ethiopia = Cafes(
+            "Ethiopia",
+            "Origem unica",
+            "Notas de chocolate meio amargo, pimenta e citrico adocicado",
+            R.drawable.ethiopia_embalagem,
+            R.drawable.torra_brasil_ethiopia,
+            getString(R.string.ethiopia_historia),
+            "Corpo:Medio",
+            "Processamento:Lavado",
+            "Acidez:Alta ", "Regiao:Africa/Arabia"
+        )
+        listaCafes.add(ethiopia)
+
+        val espresso = Cafes(
+            "Espresso \nRoast",
+            "Blend",
+            "Notas de caramelo, especiarias,chocolate meio amargo e castanhas",
+            R.drawable.espresso_embalagem,
+            R.drawable.torra_espresso,
+            getString(R.string.espresso_historia),
+            "Corpo:Encorpado",
+            "Processamento:Lavado\n                     Semi-Lavado",
+            "Acidez:Media ", "Regiao:América-latina\n              Ásia/Pacifico"
+        )
+        listaCafes.add(espresso)
+
+        val pike = Cafes(
+            "Pike Place",
+            "Blend",
+            "Notas de chocolate, canela, cacau e castanha tostada",
+            R.drawable.pike_embalagem,
+            R.drawable.torra_pike,
+            getString(R.string.pike_historia),
+            "Corpo:Medio",
+            "Processamento:lavado",
+            "Acidez:Media ", "Regiao:América Latina"
+        )
+        listaCafes.add(pike)
+
         val sumatra = Cafes(
             "Sumatra",
             "Origem Unica",
@@ -72,32 +138,22 @@ class ListaCafes : AppCompatActivity() {
             ),
             "Corpo:Encorpado",
             "Processamento:Semi-Lavado",
-            "Acidez:Baixa","Regiao:Asia/Pacifico"
+            "Acidez:Baixa","Regiao:Ásia/Pacifico"
         )
         listaCafes.add(sumatra)
-        val sumatra2 = Cafes(
-            "Sumatra",
-            "Origem Unica",
-            "Notas herbais e de Especiarias",
-            R.drawable.imagem_padrao,
-            R.drawable.imagem_padrao,
-            "blablablablalba",
-            "Corpo:Encorpado",
-            "Processamento:Semi-Lavado",
-            "Acidez:Baixa", "Asia/Pacifico"
-        )
-        listaCafes.add(sumatra2)
-        val brasil = Cafes(
-            "Brasil Blend",
+        val verona = Cafes(
+            "Verona",
             "Blend",
-            "Suave acidez com notas de castanhas e chocolate ao leite",
-            R.drawable.brasil_embalagem,
-            R.drawable.torra_brasil_ethiopia,
-            getString(R.string.brasil_historia),
-            "Corpo:medio",
-            "Processamento:seco e semi-lavado",
-            "Acidez:Media/Baixa", "Regiao:America Latina"
+            "Notas de chocolate meio amargo, caramelo, cacau e açucar caramelizado",
+            R.drawable.verona_embalagem,
+            R.drawable.sumatra_e_verona,
+            getString(R.string.verona_historia),
+            "Corpo:Encorpado",
+            "Processamento:Lavado\n" +
+                    "                    Semi-Lavado",
+            "Acidez:Baixa ", "Regiao:América-latina\n" +
+                    "              Ásia/Pacifico"
         )
-        listaCafes.add(brasil)
+        listaCafes.add(verona)
     }
 }

@@ -26,16 +26,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/passaporteNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="@+id/passaporteOrigem"
-        app:layout_constraintTop_toBottomOf="@+id/passaporteOrigem"
-        />
+        <TextView
+            android:id="@+id/passaporteNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintEnd_toStartOf="@id/passaporteImagem"
+            app:layout_constraintStart_toStartOf="@+id/passaporteOrigem"
+            app:layout_constraintTop_toBottomOf="@+id/passaporteOrigem" />
 
     <TextView
         android:id="@+id/passaporteNotas"
@@ -86,16 +87,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passaporteNotas" />
 
-    <TextView
-        android:id="@+id/passaporteCorpo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Corpo: Medio"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passaporteTorra" />
+        <TextView
+            android:id="@+id/passaporteCorpo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Corpo: Medio"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/passaporteAcidez"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passaporteTorra" />
 
         <TextView
             android:id="@+id/passaporteAcidez"
@@ -105,7 +108,6 @@
             android:text="Acidez: Media"
             android:textColor="@color/black"
             android:textSize="18sp"
-
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passaporteCorpo" />
 
