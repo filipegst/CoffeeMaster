@@ -36,10 +36,11 @@ class TopicosAdapter constructor(
         holder.cardView.setOnClickListener {
             val intent = Intent(it.context, TextoCompleto::class.java)
 
-            intent.putExtra("imagem", itemAtual.imagem)
             intent.putExtra("titulo", itemAtual.titulo)
+            intent.putExtra("imagem", itemAtual.imagem)
             intent.putExtra("texto", itemAtual.texto)
-
+            intent.putExtra("texto2", itemAtual.texto2)
+            intent.putExtra("imagem2", itemAtual.imagem2)
             it.context.startActivity(intent)
         }
     }

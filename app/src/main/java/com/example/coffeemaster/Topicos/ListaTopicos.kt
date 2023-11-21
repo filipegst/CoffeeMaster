@@ -8,10 +8,8 @@ import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeemaster.Passaporte.ListaCafes
-import com.example.coffeemaster.Passaporte.PassaporteDoCafe
 import com.example.coffeemaster.R
 import com.example.coffeemaster.databinding.ActivityMainBinding
-import com.google.android.material.tabs.TabLayout
 
 class ListaTopicos : AppCompatActivity() {
 
@@ -68,16 +66,62 @@ class ListaTopicos : AppCompatActivity() {
     }
 
     private fun prepararListaTopicos() {
-        val topico = Topicos("teste", R.drawable.imagem_padrao, "teste do texto")
-        listaTopicos.add(topico)
-        val topico2 = Topicos("teste2", R.drawable.imagem_padrao, "teste do segundo texto ")
-        listaTopicos.add(topico2)
-        val topico3 = Topicos("teste3", R.drawable.imagem_padrao, "teste do terceiro texto ")
-        listaTopicos.add(topico3)
-        val topico4 = Topicos("teste4", R.drawable.imagem_padrao, "teste do quarto texto ")
-        listaTopicos.add(topico4)
-        val topico5 = Topicos("historia do cafe", R.drawable.imagem_padrao, getString(R.string.historia_do_cafe))
-        listaTopicos.add(topico5)
+        val historiaDoCafe = Topicos("historia do cafe",
+            R.drawable.kaldir,
+            getString(R.string.historia_do_cafe),
+            getString(R.string.historia_do_cafe2),
+            R.drawable.camelo)
+        listaTopicos.add(historiaDoCafe)
+
+        val botanicaDoCafe = Topicos("Botanica do Cafe",
+            R.drawable.botanicadocafe,
+            getString(R.string.botanicaDoCafe),
+            getString(R.string.botanicaDoCafe2),
+            R.drawable.botanicadocafe2)
+        listaTopicos.add(botanicaDoCafe)
+
+        val colheita = Topicos("Colheita",
+            R.drawable.colheita,
+            getString(R.string.colheita),
+            getString(R.string.colheita2),
+            R.drawable.colheita2)
+        listaTopicos.add(colheita)
+
+        val poscolheita = Topicos("Pós Colheita",
+            R.drawable.poscolheita,
+            getString(R.string.póscolheita),
+            getString(R.string.póscolheita2),
+            R.drawable.poscolheita2)
+        listaTopicos.add(poscolheita)
+
+        val secagem = Topicos("Secagem",
+            R.drawable.secagem,
+            getString(R.string.secagem),
+            getString(R.string.secagem2),
+            R.drawable.secagem2)
+        listaTopicos.add(secagem)
+
+        val classificacao = Topicos("Classificação",
+            R.drawable.classificacao,
+            getString(R.string.classificaçao),
+            getString(R.string.classificacao2),
+            R.drawable.classificacao2)
+        listaTopicos.add(classificacao)
+
+        val torra = Topicos("  Torra",
+            R.drawable.torra,
+            getString(R.string.torra),
+            getString(R.string.torra2),
+            R.drawable.torra2)
+        listaTopicos.add(torra)
+
+        val metododepreparo = Topicos("Metodos de Preparo",
+            R.drawable.metodo,
+            getString(R.string.metododepreparo),
+            getString(R.string.metododepreparo2),
+            R.drawable.metodo2)
+        listaTopicos.add(metododepreparo)
+
 
     }
 }
