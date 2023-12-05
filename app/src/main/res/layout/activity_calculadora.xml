@@ -15,15 +15,17 @@
         android:layout_marginTop="48dp"
         android:background="@drawable/texto_redondo"
         android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
         android:padding="10dp"
         android:text="0"
-        android:maxLength="2"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="64sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/categoria_proporcao"
@@ -49,6 +51,7 @@
         android:padding="10dp"
         android:maxLength="5"
         android:text="00"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="@color/corPrimariaEscura"
         android:textSize="64sp"
@@ -91,6 +94,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="0"
+        android:inputType="number"
         android:maxLength="3"
         android:textAlignment="center"
         android:textColor="@color/corPrimariaEscura"
