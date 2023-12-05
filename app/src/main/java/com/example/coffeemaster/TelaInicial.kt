@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.coffeemaster.Passaporte.ListaCafes
 import com.example.coffeemaster.Topicos.ListaTopicos
+import com.example.coffeemaster.calculadora.Calculadora
 import com.example.coffeemaster.databinding.ActivityMainBinding
 import com.example.coffeemaster.databinding.ActivityTelaInicialBinding
 
@@ -23,6 +24,11 @@ class TelaInicial : AppCompatActivity() {
         }
         binding.cardInicioPassaporte.setOnClickListener {
             val intent = Intent(this,ListaCafes::class.java)
+            startActivity(intent)
+        }
+
+        binding.cardInicioCalculadora.setOnClickListener {
+            val intent = Intent (this, Calculadora::class.java)
             startActivity(intent)
         }
     }

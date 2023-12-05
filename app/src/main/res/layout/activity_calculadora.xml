@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculadora.Calculadora">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/text_proporcao"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_margin="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/texto_redondo"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="0"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categoria_proporcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proporção"
+        android:layout_margin="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/text_proporcao"
+        app:layout_constraintStart_toStartOf="@+id/text_proporcao"
+        app:layout_constraintTop_toTopOf="@id/text_proporcao">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/text_agua"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_margin="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shape_calculadora"
+        android:gravity="center"
+        android:padding="10dp"
+        android:maxLength="5"
+        android:text="00"
+        android:textAlignment="center"
+        android:textColor="@color/corPrimariaEscura"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_proporcao" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Água"
+        android:layout_margin="4dp"
+        android:textColor="@color/corPrimariaEscura"
+        app:layout_constraintEnd_toEndOf="@+id/text_agua"
+        app:layout_constraintStart_toStartOf="@+id/text_agua"
+        app:layout_constraintTop_toTopOf="@id/text_agua"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ml"
+        android:layout_margin="10dp"
+        android:textColor="@color/corPrimariaEscura"
+        app:layout_constraintEnd_toEndOf="@+id/text_agua"
+        app:layout_constraintStart_toStartOf="@+id/text_agua"
+        app:layout_constraintBottom_toBottomOf="@id/text_agua">
+
+    </TextView>
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/text_cafe"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_margin="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shape_calculadora"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="0"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:textColor="@color/corPrimariaEscura"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_agua" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Café"
+        android:layout_margin="4dp"
+        android:textColor="@color/corPrimariaEscura"
+        app:layout_constraintEnd_toEndOf="@+id/text_cafe"
+        app:layout_constraintStart_toStartOf="@+id/text_cafe"
+        app:layout_constraintTop_toTopOf="@id/text_cafe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gramas"
+        android:layout_margin="10dp"
+        android:textColor="@color/corPrimariaEscura"
+        app:layout_constraintEnd_toEndOf="@+id/text_cafe"
+        app:layout_constraintStart_toStartOf="@+id/text_cafe"
+        app:layout_constraintBottom_toBottomOf="@id/text_cafe">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calcular"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_cafe"
+        app:layout_constraintVertical_bias="1"
+        android:layout_margin="25dp">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

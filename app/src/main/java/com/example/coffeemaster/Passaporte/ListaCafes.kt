@@ -102,15 +102,15 @@ class ListaCafes : AppCompatActivity() {
         listaCafes.add(ethiopia)
 
         val espresso = Cafes(
-            "Espresso \nRoast",
+            "Espresso Roast",
             "Blend",
             "Notas de caramelo, especiarias,chocolate meio amargo e castanhas",
             R.drawable.espresso_embalagem,
             R.drawable.torra_espresso,
             getString(R.string.espresso_historia),
             "Corpo:Encorpado",
-            "Processamento:Lavado\n                     Semi-Lavado",
-            "Acidez:Media ", "Regiao:América-latina\n              Ásia/Pacifico"
+            "Processamento:Lavado  Semi-Lavado",
+            "Acidez:Media ", "Regiao:América-latina Ásia/Pacifico"
         )
         listaCafes.add(espresso)
 

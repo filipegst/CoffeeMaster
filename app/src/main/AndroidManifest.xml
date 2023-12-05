@@ -7,28 +7,31 @@
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:enableOnBackInvokedCallback="true"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.CoffeeMaster"
         tools:targetApi="31">
+        <activity
+            android:name=".calculadora.Calculadora"
+            android:exported="false" />
         <activity
             android:name=".Passaporte.PassaporteDoCafe"
             android:exported="false"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Passaporte.ListaCafes"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".TelaInicial"
-            android:theme="@style/Base.Theme.CoffeeMaster.NoActionBar"
-            android:exported="true">
-
+            android:exported="true"
+            android:theme="@style/Base.Theme.CoffeeMaster.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -38,7 +41,6 @@
         <activity
             android:name=".Topicos.ListaTopicos"
             android:exported="true" />
-
 
         <meta-data
             android:name="preloaded_fonts"

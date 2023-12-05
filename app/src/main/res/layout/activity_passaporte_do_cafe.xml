@@ -28,11 +28,13 @@
 
         <TextView
             android:id="@+id/passaporteNome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
             android:text="Nome"
             android:textColor="@color/black"
-            android:textSize="32sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="start"
+            android:maxLines="1"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintEnd_toStartOf="@id/passaporteImagem"
             app:layout_constraintStart_toStartOf="@+id/passaporteOrigem"
@@ -70,7 +72,7 @@
             android:id="@+id/passaporteImagem"
             android:layout_width="0dp"
             android:layout_height="160dp"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             android:src="@drawable/pike_embalagem"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/passaporteNotas"
@@ -90,14 +92,17 @@
         <TextView
             android:id="@+id/passaporteCorpo"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="18dp"
             android:text="Corpo: Medio"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
             app:layout_constraintBottom_toTopOf="@id/passaporteAcidez"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/passaporteRegiao"
             app:layout_constraintTop_toBottomOf="@+id/passaporteTorra" />
 
         <TextView
@@ -107,8 +112,11 @@
             android:layout_margin="16dp"
             android:text="Acidez: Media"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="1"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/passaporteProcessamento"
             app:layout_constraintTop_toBottomOf="@+id/passaporteCorpo" />
 
     <TextView
@@ -116,10 +124,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Processamento: Lavado"
         android:textColor="@color/black"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passaporteAcidez"
         app:layout_constraintTop_toTopOf="@+id/passaporteAcidez" />
@@ -129,10 +138,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:textColor="@color/black"
         android:text="Regiao: Africa/Arabica "
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passaporteCorpo"
         app:layout_constraintTop_toTopOf="@+id/passaporteCorpo" />
