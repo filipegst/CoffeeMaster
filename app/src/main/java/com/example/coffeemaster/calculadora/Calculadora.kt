@@ -1,7 +1,13 @@
 package com.example.coffeemaster.calculadora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import com.example.coffeemaster.Passaporte.ListaCafes
+import com.example.coffeemaster.R
+import com.example.coffeemaster.Topicos.ListaTopicos
 import com.example.coffeemaster.databinding.ActivityCalculadoraBinding
 
 class Calculadora : AppCompatActivity() {
@@ -20,6 +26,28 @@ class Calculadora : AppCompatActivity() {
             calcula()
 
         }
+
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_troca,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.menu_passaporte -> Intent (this, ListaCafes::class.java).apply {
+                startActivity(this)
+            }
+            R.id.menu_conhecimentos -> Intent (this, ListaTopicos::class.java).apply {
+                startActivity(this)
+            }
+            R.id.menu_calculadora -> Intent(this, Calculadora::class.java.apply {
+                finish();
+                startActivity(getIntent())
+            })
+        }
+
+        return super.onOptionsItemSelected(item)
 
     }
 

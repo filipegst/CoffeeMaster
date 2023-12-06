@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeemaster.Passaporte.ListaCafes
 import com.example.coffeemaster.R
+import com.example.coffeemaster.calculadora.Calculadora
 import com.example.coffeemaster.databinding.ActivityMainBinding
 
 class ListaTopicos : AppCompatActivity() {
@@ -52,6 +53,10 @@ class ListaTopicos : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
+            R.id.menu_calculadora -> Intent(this,Calculadora::class.java).apply {
+                startActivity(this)
+            }
+
             R.id.menu_passaporte -> Intent (this,ListaCafes::class.java).apply {
             startActivity(this)
             }
@@ -59,6 +64,7 @@ class ListaTopicos : AppCompatActivity() {
                 finish();
                 startActivity(getIntent());
             }
+
         }
 
         return super.onOptionsItemSelected(item)
@@ -66,14 +72,14 @@ class ListaTopicos : AppCompatActivity() {
     }
 
     private fun prepararListaTopicos() {
-        val historiaDoCafe = Topicos("historia do cafe",
+        val historiaDoCafe = Topicos("História do Café",
             R.drawable.kaldir,
             getString(R.string.historia_do_cafe),
             getString(R.string.historia_do_cafe2),
             R.drawable.camelo)
         listaTopicos.add(historiaDoCafe)
 
-        val botanicaDoCafe = Topicos("Botanica do Cafe",
+        val botanicaDoCafe = Topicos("Botânica do Café",
             R.drawable.botanicadocafe,
             getString(R.string.botanicaDoCafe),
             getString(R.string.botanicaDoCafe2),
@@ -108,14 +114,14 @@ class ListaTopicos : AppCompatActivity() {
             R.drawable.classificacao2)
         listaTopicos.add(classificacao)
 
-        val torra = Topicos("  Torra",
+        val torra = Topicos("Torra",
             R.drawable.torra,
             getString(R.string.torra),
             getString(R.string.torra2),
             R.drawable.torra2)
         listaTopicos.add(torra)
 
-        val metododepreparo = Topicos("Metodos de Preparo",
+        val metododepreparo = Topicos("Métodos de Preparo",
             R.drawable.metodo,
             getString(R.string.metododepreparo),
             getString(R.string.metododepreparo2),

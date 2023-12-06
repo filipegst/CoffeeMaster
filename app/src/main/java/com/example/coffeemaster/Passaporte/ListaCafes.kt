@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coffeemaster.R
 import com.example.coffeemaster.Topicos.ListaTopicos
+import com.example.coffeemaster.calculadora.Calculadora
 import com.example.coffeemaster.databinding.ActivityListaCafesBinding
 
 class ListaCafes : AppCompatActivity() {
@@ -48,10 +49,12 @@ class ListaCafes : AppCompatActivity() {
             R.id.menu_conhecimentos -> Intent(this, ListaTopicos::class.java).apply {
                 startActivity(this)
             }
-
             R.id.menu_passaporte -> Intent(this, ListaCafes::class.java).apply {
                 finish();
                 startActivity(getIntent());
+            }
+            R.id.menu_calculadora -> Intent(this,Calculadora::class.java).apply {
+                startActivity(this)
             }
         }
 
@@ -137,7 +140,7 @@ class ListaCafes : AppCompatActivity() {
                 R.string.sumatra_historia
             ),
             "Corpo:Encorpado",
-            "Processamento:Semi-Lavado",
+            "Processamento: Semi-Lavado",
             "Acidez:Baixa","Regiao:Ásia/Pacifico"
         )
         listaCafes.add(sumatra)
